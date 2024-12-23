@@ -1,0 +1,817 @@
+mouseWheel:
+  closed: false
+  currentObservers: null
+  isStopped: false
+  hasError: false
+  thrownError: null
+  __isAsync: false
+elementDraw:
+  closed: false
+  currentObservers: null
+  isStopped: false
+  hasError: false
+  thrownError: null
+  __isAsync: false
+snapSettings:
+  constraints: 16
+serializationSettings:
+  preventDefaults: true
+contextMenuSettings:
+  show: true
+  items:
+    - text: Edit
+      id: edit
+      target: .e-elementcontent
+      iconCss: fa fa-cogs
+    - text: Callout To
+      id: callout
+      target: .e-elementcontent
+      iconCss: fa fa-crosshairs
+    - text: Increase font size ↑
+      id: increaseFontSize
+      target: .e-elementcontent
+      iconCss: fa fa-font
+    - text: Decrease font size ↓
+      id: decreaseFontSize
+      target: .e-elementcontent
+      iconCss: fa fa-font
+    - text: Bold
+      id: boldText
+      target: .e-elementcontent
+      iconCss: fa fa-bold
+    - text: Italicize
+      id: italicizeText
+      target: .e-elementcontent
+      iconCss: fa fa-italic
+    - text: Fill
+      id: fill
+      target: .e-elementcontent
+      iconCss: fa fa-tint
+    - text: Highlight
+      id: highlight
+      target: .e-elementcontent
+      iconCss: fa fa-lightbulb-o
+    - text: Collapse to square
+      id: collapseToSquare
+      target: .e-elementcontent
+      iconCss: fa fa-compress
+    - text: Collapse to named square
+      id: collapseToNamedSquare
+      target: .e-elementcontent
+      iconCss: fa fa-compress
+    - text: Collapse to circle
+      id: collapseToCircle
+      target: .e-elementcontent
+      iconCss: fa fa-compress
+    - text: Expand
+      id: expand
+      target: .e-elementcontent
+      iconCss: fa fa-expand
+    - text: Bring to front
+      id: front
+      target: .e-elementcontent
+      iconCss: fa fa-angle-double-up
+    - text: Bring forward
+      id: forward
+      target: .e-elementcontent
+      iconCss: fa fa-angle-up
+    - text: Send backward
+      id: backward
+      target: .e-elementcontent
+      iconCss: fa fa-angle-down
+    - text: Send to back
+      id: back
+      target: .e-elementcontent
+      iconCss: fa fa-angle-double-down
+    - text: Remove
+      id: remove
+      target: .e-elementcontent
+      iconCss: fa fa-times
+  showCustomMenuOnly: true
+tool: 5
+scrollSettings:
+  scrollLimit: Infinity
+  viewPortWidth: 930
+  viewPortHeight: 603
+  horizontalOffset: 198
+  verticalOffset: -99
+addInfo:
+  currencyText: USD ($)
+  currencySymbol: $
+  selectedViewType: 0
+height: 603
+nodes:
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #181818;"><div
+        class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Anthropic_Black_87_ehalpe.webp);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Anthropic_codit3.webp);"></div><div
+        class="c-text"><div class="c-title">Anthropic Claude 3.5</div><div
+        class="c-short-description">"Tool use" for controlled output following a
+        specific schema</div><div class="c-bottom"><div class="c-hr
+        p-mb-1"></div><div
+        class="c-title-bottom">Anthropic</div></div></div></div></div>'
+    id: AnthropicCERGr
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Anthropic
+        shortDescription: '"Tool use" for controlled output following a specific schema'
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        totaling: false
+        total: 0
+        viewType: total
+        name: Anthropic
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Anthropic
+      editableName: Anthropic Claude 3.5
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Processing Tool
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageProcessingTime
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Processing Tool
+          AverageProcessingTime: 1
+      name: Anthropic
+      category: 3
+      imgUrl: https://static.softwaresim.com/logos/webp/Anthropic_codit3.webp
+      imgPrimaryUrl: https://static.softwaresim.com/logos/webp/Anthropic__044448_nm4ttd.webp
+      imgBlackUrl: https://static.softwaresim.com/logos/webp/Anthropic_Black_87_ehalpe.webp
+      color: "#181818"
+      controlText: Anthropic
+      selectedDynamicsView: 0
+      latitude: null
+      longitude: null
+    width: 300
+    height: 100
+    offsetX: 283
+    offsetY: 222
+    zIndex: 0
+    outEdges:
+      - Straight Bidirectional ConnectorgSrcs
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #3871e0;"><div
+        class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://static.softwaresim.com/logos/webp/cloud_run_Black_87_egowtg.webp);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://static.softwaresim.com/logos/webp/cloud_run_icgqao.webp);"></div><div
+        class="c-text"><div class="c-title">Google Cloud Run</div><div
+        class="c-short-description">Running stateless containers in a fully
+        managed serverless environment</div><div class="c-bottom"><div
+        class="c-hr p-mb-1"></div><div class="c-title-bottom">Google Cloud
+        Platform</div></div></div></div></div>'
+    id: Google Cloud RunbIlB4
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Google Cloud Run
+        shortDescription: Running stateless containers in a fully managed serverless environment
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        totaling: false
+        total: 0
+        viewType: total
+        name: Google Cloud Run
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Google Cloud Run
+      editableName: Google Cloud Run
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Processing Tool
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageProcessingTime
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Processing Tool
+          AverageProcessingTime: 1
+      name: Google Cloud Run
+      category: 5
+      imgUrl: https://static.softwaresim.com/logos/webp/cloud_run_icgqao.webp
+      imgPrimaryUrl: https://static.softwaresim.com/logos/webp/cloud_run__044448_vfqzy2.webp
+      imgBlackUrl: https://static.softwaresim.com/logos/webp/cloud_run_Black_87_egowtg.webp
+      color: "#3871e0"
+      controlText: Cloud Run
+      selectedDynamicsView: 0
+      location: "[GCP] us-central1"
+      latitude: 41.26194
+      longitude: -95.86083
+    width: 300
+    height: 100
+    offsetX: 640
+    offsetY: 173
+    zIndex: 1
+    inEdges:
+      - Straight Bidirectional ConnectorgSrcs
+      - Straight ConnectornA3V2
+      - Dashed Orthogonal ConnectorUHK43
+    outEdges:
+      - Straight ConnectorJ1wB9
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #3478B3; border-radius:
+        50%"><div class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Docker_Black_87_xpuvlp.webp);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Docker_gnh7eh.webp);
+        border-radius: 50%"></div></div></div>'
+    id: DockeriVTCf
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Docker
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        totaling: false
+        total: 0
+        viewType: total
+        name: Docker
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Docker
+      editableName: Docker
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Deployment Target
+          type: Storage
+          portsIn:
+            put: deployed
+            get: request
+          portsOut:
+            stored: response
+      dynamicsViews:
+        - type: Storage
+          status: Idle
+          name: Deployment Target
+      name: Docker
+      category: 10
+      imgUrl: https://static.softwaresim.com/logos/webp/Docker_gnh7eh.webp
+      imgPrimaryUrl: https://static.softwaresim.com/logos/webp/Docker__044448_env9qq.webp
+      imgBlackUrl: https://static.softwaresim.com/logos/webp/Docker_Black_87_xpuvlp.webp
+      color: "#3478B3"
+      controlText: Docker
+      selectedDynamicsView: 0
+      collapsedToSquare: false
+      collapsedToNamedSquare: false
+      collapsedToCircle: true
+    width: 100
+    height: 100
+    offsetX: 812
+    offsetY: 120
+    zIndex: 2
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #3871e0;"><div
+        class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://static.softwaresim.com/logos/webp/bigquery_Black_87_wnczcr.webp);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://static.softwaresim.com/logos/webp/bigquery_qbcoev.webp);"></div><div
+        class="c-text"><div class="c-title">Google BigQuery</div><div
+        class="c-short-description">Analyzing massive datasets in real-time
+        using SQL-like queries</div><div class="c-bottom"><div class="c-hr
+        p-mb-1"></div><div class="c-title-bottom">Google Cloud
+        Platform</div></div></div></div></div>'
+    id: Google BigQueryEpZUq
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Google BigQuery
+        shortDescription: Analyzing massive datasets in real-time using SQL-like queries
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        totaling: false
+        total: 0
+        viewType: total
+        name: Google BigQuery
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Google BigQuery
+      editableName: Google BigQuery
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Processing Tool
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageProcessingTime
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Processing Tool
+          AverageProcessingTime: 1
+      name: Google BigQuery
+      category: 5
+      imgUrl: https://static.softwaresim.com/logos/webp/bigquery_qbcoev.webp
+      imgPrimaryUrl: https://static.softwaresim.com/logos/webp/bigquery__044448_tx0mzn.webp
+      imgBlackUrl: https://static.softwaresim.com/logos/webp/bigquery_Black_87_wnczcr.webp
+      color: "#3871e0"
+      controlText: BigQuery
+      selectedDynamicsView: 0
+      location: "[GCP] us-central1"
+      latitude: 41.26194
+      longitude: -95.86083
+    width: 300
+    height: 100
+    offsetX: 640
+    offsetY: 315
+    zIndex: 4
+    inEdges:
+      - Straight ConnectorJ1wB9
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #616161;"><div
+        class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Users_Black_87_nsu596.webp);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Users__616161_e24kgx.webp);"></div><div
+        class="c-text"><div class="c-title">Users</div><div
+        class="c-short-description">Interact with the Docker service, providing
+        a plain text order which is extracted</div><div class="c-bottom"><div
+        class="c-hr p-mb-1"></div><div
+        class="c-title-bottom">Users</div></div></div></div></div>'
+    id: UsersVKhuI
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Users
+        shortDescription: Interact with the Docker service, providing a plain text order
+          which is extracted
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        totaling: false
+        total: 0
+        viewType: total
+        name: Users
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Users
+      editableName: Users
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Work Item Generator
+          type: Generator
+          portsIn: {}
+          portsOut:
+            job: work item
+          messageInterdepartureTime:
+            exp:
+              lambda: AverageTimeBetweenWorkItemCreations
+        - name: Request Generator
+          type: Generator
+          portsIn: {}
+          portsOut:
+            job: request
+          messageInterdepartureTime:
+            exp:
+              lambda: AverageTimeBetweenRequests
+        - name: Response Receiver
+          type: Storage
+          portsIn:
+            put: response
+            get: latest
+          portsOut:
+            stored: response
+        - name: Deployer
+          type: Processor
+          portsIn:
+            job: deployable
+          portsOut:
+            job: deployed
+          serviceTime:
+            exp:
+              lambda: AverageDeploymentDuration
+      dynamicsViews:
+        - type: Generator
+          status: Idle
+          name: Work Item Generator
+          AverageTimeBetweenWorkItemCreations: 1
+        - type: Generator
+          status: Idle
+          name: Request Generator
+          AverageTimeBetweenRequests: 1
+        - type: Storage
+          status: Idle
+          name: Response Receiver
+        - type: Processor
+          status: Idle
+          name: Deployer
+          AverageDeploymentDuration: 1
+      name: Users
+      category: 6
+      imgUrl: https://static.softwaresim.com/logos/webp/Users__616161_e24kgx.webp
+      imgPrimaryUrl: https://static.softwaresim.com/logos/webp/Users_Black_ij2426.webp
+      imgBlackUrl: https://static.softwaresim.com/logos/webp/Users_Black_87_nsu596.webp
+      color: "#616161"
+      controlText: Users
+      selectedDynamicsView: 0
+      latitude: null
+      longitude: null
+    width: 300
+    height: 100
+    offsetX: 640
+    offsetY: 14
+    zIndex: 6
+    outEdges:
+      - Straight ConnectornA3V2
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #3B77A7; border-radius:
+        50%"><div class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Python_A__Black_87_nciqru.webp);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Python_A_sgxbzs.webp);
+        border-radius: 50%"></div></div></div>'
+    id: PythonuGth3
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Python
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        totaling: false
+        total: 0
+        viewType: total
+        name: Python
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Python
+      editableName: Python
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Automated Task
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageTaskDuration
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Automated Task
+          AverageTaskDuration: 1
+      name: Python
+      category: 8
+      imgUrl: https://static.softwaresim.com/logos/webp/Python_A_sgxbzs.webp
+      imgPrimaryUrl: https://static.softwaresim.com/logos/webp/Python_A__044448_g32jqq.webp
+      imgBlackUrl: https://static.softwaresim.com/logos/webp/Python_A__Black_87_nciqru.webp
+      controlText: Python
+      color: "#3B77A7"
+      selectedDynamicsView: 0
+      collapsedToSquare: false
+      collapsedToNamedSquare: false
+      collapsedToCircle: true
+    width: 100
+    height: 100
+    offsetX: 1175
+    offsetY: 279
+    zIndex: 9
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #3871e0;"><div
+        class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://static.softwaresim.com/logos/webp/cloud_functions_Black_87_i6veto.webp);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://static.softwaresim.com/logos/webp/cloud_functions_rwqvz4.webp);"></div><div
+        class="c-text"><div class="c-title">Google Cloud Functions</div><div
+        class="c-short-description">Serverless execution of event-driven code in
+        the cloud</div><div class="c-bottom"><div class="c-hr p-mb-1"></div><div
+        class="c-title-bottom">Google Cloud
+        Platform</div></div></div></div></div>'
+    id: Google Cloud FunctionswpAAt
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Google Cloud Functions
+        shortDescription: Serverless execution of event-driven code in the cloud
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        totaling: false
+        total: 0
+        viewType: total
+        name: Google Cloud Functions
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Google Cloud Functions
+      editableName: Google Cloud Functions
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Processing Tool
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageProcessingTime
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Processing Tool
+          AverageProcessingTime: 1
+      name: Google Cloud Functions
+      category: 5
+      imgUrl: https://static.softwaresim.com/logos/webp/cloud_functions_rwqvz4.webp
+      imgPrimaryUrl: https://static.softwaresim.com/logos/webp/cloud_functions__044448_u2hmi4.webp
+      imgBlackUrl: https://static.softwaresim.com/logos/webp/cloud_functions_Black_87_i6veto.webp
+      color: "#3871e0"
+      controlText: Cloud Functions
+      selectedDynamicsView: 0
+      location: "[GCP] us-central1"
+      latitude: 41.26194
+      longitude: -95.86083
+    width: 300
+    height: 100
+    offsetX: 996
+    offsetY: 254
+    zIndex: 8
+    outEdges:
+      - Dashed Orthogonal ConnectorUHK43
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #976a02; border-radius:
+        50%"><div class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Email_Black_87_xlvbmn.webp);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Email_976a02_h5kj7b.webp);
+        border-radius: 50%"></div></div></div>'
+    id: EmailZ3VwF
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Email
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        totaling: false
+        total: 0
+        viewType: total
+        name: Email
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Email
+      editableName: Email
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Notification Target
+          type: Storage
+          portsIn:
+            put: notification
+            get: fetch
+          portsOut:
+            stored: notification
+        - name: Action Trigger
+          type: Processor
+          portsIn:
+            job: trigger
+          portsOut:
+            job: action
+          serviceTime:
+            exp:
+              lambda: AverageTimeToTriggerAction
+      dynamicsViews:
+        - type: Storage
+          status: Idle
+          name: Notification Target
+        - type: Processor
+          status: Idle
+          name: Action Trigger
+          AverageTimeToTriggerAction: 1
+      name: Email
+      category: 6
+      imgUrl: https://static.softwaresim.com/logos/webp/Email_976a02_h5kj7b.webp
+      imgPrimaryUrl: https://static.softwaresim.com/logos/webp/Email_Black_t1ealv.webp
+      imgBlackUrl: https://static.softwaresim.com/logos/webp/Email_Black_87_xlvbmn.webp
+      controlText: Email
+      color: "#976a02"
+      selectedDynamicsView: 0
+      collapsedToSquare: false
+      collapsedToNamedSquare: false
+      collapsedToCircle: true
+    width: 100
+    height: 100
+    offsetX: 817
+    offsetY: -39
+    zIndex: 11
+connectors:
+  - id: Straight Bidirectional ConnectorgSrcs
+    sourceDecorator:
+      shape: OpenArrow
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+    sourcePoint:
+      x: 433
+      y: 201.41
+    targetPoint:
+      x: 490
+      y: 193.59
+    sourceID: AnthropicCERGr
+    targetID: Google Cloud RunbIlB4
+    addInfo:
+      viewConnector: 0
+    zIndex: 3
+  - id: Straight ConnectorJ1wB9
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+    sourcePoint:
+      x: 640
+      y: 223
+    targetPoint:
+      x: 640
+      y: 265
+    sourceID: Google Cloud RunbIlB4
+    targetID: Google BigQueryEpZUq
+    addInfo:
+      viewConnector: 0
+    zIndex: 5
+  - id: Straight ConnectornA3V2
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+    sourcePoint:
+      x: 640
+      y: 64
+    targetPoint:
+      x: 640
+      y: 123
+    sourceID: UsersVKhuI
+    targetID: Google Cloud RunbIlB4
+    addInfo:
+      viewConnector: 0
+    zIndex: 7
+  - id: Dashed Orthogonal ConnectorUHK43
+    type: Orthogonal
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+      strokeDashArray: 2 2
+    constraints: 470654
+    sourcePoint:
+      x: 846
+      y: 254
+    targetPoint:
+      x: 790
+      y: 173
+    sourceID: Google Cloud FunctionswpAAt
+    targetID: Google Cloud RunbIlB4
+    segments:
+      - type: Orthogonal
+    addInfo:
+      viewConnector: 0
+    zIndex: 10
+selectedItems:
+  width: 0
+  height: 0
